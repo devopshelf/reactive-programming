@@ -1,0 +1,16 @@
+<!-- getUserInput() -->
+
+<div *ngIf="show">
+  <div class="backdrop"></div>
+  <div class="modal-container">
+    <div class="modal-body">
+      <p>Hi there!!, Enter your name</p>
+      <input type="text" [(ngModel)]="message" placeholder="Enter value">  
+    </div>
+    <br />
+    <div class="modal-action">
+      <button (click)="onOk()" id="ok">OK</button>
+      <button (click)="onClose()">CANCEL</button>
+    </div>
+  </div>
+</div>

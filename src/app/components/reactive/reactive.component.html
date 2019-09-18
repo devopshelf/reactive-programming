@@ -1,0 +1,19 @@
+<!-- calculate(): number {
+		let a = await getUserInput();		
+		let b = await getUserInput();
+		
+		let result = a + b;	
+		return result
+	} -->
+
+alert(calculate(a,b))
+
+<button (click)="calculate()">Open Modal</button>
+<button (click)="dummy()">DUMMY</button>
+
+<!-- getUserInput() -->
+<app-modal
+  [show]="show"
+  (handleOk)="recieveUserInput($event)"
+  (handleClose)="onCancel()"
+></app-modal>
